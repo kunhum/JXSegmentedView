@@ -22,6 +22,10 @@ open class JXSegmentedIndicatorBaseView: UIView, JXSegmentedIndicatorProtocol {
     open var indicatorHeight: CGFloat = JXSegmentedViewAutomaticDimension
     /// 默认JXSegmentedViewAutomaticDimension （等于indicatorHeight/2）。内部通过getIndicatorCornerRadius方法获取实际的值
     open var indicatorCornerRadius: CGFloat = JXSegmentedViewAutomaticDimension
+    open var indicatorBorderWidth: CGFloat = 0.0
+    open var indicatorBorderColor: UIColor = UIColor.clear
+    open var indicatorSelectedBorderWidth: CGFloat = 0.5
+    open var indicatorSelectedBorderColor: UIColor = UIColor.red
     /// 指示器的颜色
     open var indicatorColor: UIColor = .red
     /// 指示器的位置，top、bottom、center
